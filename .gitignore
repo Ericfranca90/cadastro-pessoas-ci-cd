@@ -1,0 +1,30 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+!.env.example
+
+# Cobertura e resultados de testes
+coverage/
+.nyc_output/
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+.cache/
+tmp/
+temp/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Cadastros locais armazenados pelo backend
+backend/data/*.json
+!backend/data/*.example.json

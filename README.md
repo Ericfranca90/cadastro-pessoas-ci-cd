@@ -34,7 +34,7 @@ As escolhas abaixo foram feitas pela dupla e não foram determinadas pelo profes
 - Docker para gerar a imagem da aplicação.
 - GitHub Actions para executar automaticamente as verificações do projeto.
 
-As versões e a compatibilidade dessas ferramentas serão verificadas antes da instalação. Docker e GitHub Actions serão configurados apenas nas etapas correspondentes. O escopo não inclui login, autenticação nem validação matemática completa dos dígitos do CPF.
+As ferramentas locais, suas versões e seus comandos estão descritos em [`docs/ferramentas.md`](docs/ferramentas.md). Docker e GitHub Actions serão configurados apenas nas etapas correspondentes. O escopo não inclui login, autenticação nem validação matemática completa dos dígitos do CPF.
 
 ## Organização do projeto
 
@@ -48,8 +48,8 @@ Esta organização é uma decisão da dupla, não uma exigência expressa do pro
 
 ## Etapas previstas
 
-1. Preparação do ambiente e do repositório — em andamento.
-2. Configuração das ferramentas de análise, formatação e testes — não iniciada.
+1. Preparação do ambiente e do repositório — concluída.
+2. Configuração das ferramentas de análise, formatação e testes — concluída na branch `configurar-ferramentas`, aguardando revisão.
 3. Definição e documentação do contrato da API — não iniciada.
 4. Desenvolvimento do backend com TDD — não iniciado.
 5. Armazenamento dos cadastros em arquivo JSON — não iniciado.
@@ -61,7 +61,7 @@ Esta organização é uma decisão da dupla, não uma exigência expressa do pro
 
 ## Situação atual
 
-Apenas a estrutura documental inicial do projeto foi preparada. Ainda não há dependências instaladas, funcionalidades implementadas, testes, análise estática, formatação automática, pipeline ou imagem.
+A estrutura inicial foi publicada no GitHub. Jest, ESLint e Prettier foram configurados na branch `configurar-ferramentas`. Ainda não há funcionalidades nem testes do CRUD; eles começarão com TDD nas próximas etapas. O pipeline e a imagem Docker também não foram iniciados.
 
 ## Confirmações do professor
 

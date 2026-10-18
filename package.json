@@ -1,0 +1,22 @@
+{
+  "name": "cadastro-pessoas-ci-cd",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Trabalho acadêmico de Integração e Entrega Contínua para cadastro de pessoas.",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "engines": {
+    "node": ">=24"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "eslint": "10.13.0",
+    "globals": "17.13.0",
+    "jest": "30.5.2",
+    "prettier": "3.9.10"
+  }
+}

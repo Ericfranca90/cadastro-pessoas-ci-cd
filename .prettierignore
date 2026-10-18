@@ -1,0 +1,9 @@
+node_modules/
+coverage/
+.nyc_output/
+output/
+docs/evidencias/imagens/
+backend/data/*.json
+!backend/data/*.example.json
+tmp/
+temp/

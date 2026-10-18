@@ -6,5 +6,6 @@ Use nomes numerados e descritivos, começando por:
 
 - `01-estrutura-inicial.png`
 - `02-ambiente-e-commit.png`
+- `03-repositorio-github.png`
 
 Novos nomes serão indicados nos próximos pontos de captura.

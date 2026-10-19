@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Pessoas</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header class="topo">
+        <h1>Cadastro de Pessoas</h1>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2 id="titulo-form">Nova pessoa</h2>
+            <form id="form-pessoa" novalidate>
+                <div class="campo">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" required />
+                </div>
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Nome completo" required />
+                </div>
+                <div class="campo">
+                    <label for="dataNascimento">Data de nascimento</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required />
+                </div>
+                <p id="mensagem" class="mensagem" role="alert"></p>
+                <div class="acoes">
+                    <button type="submit" id="btn-salvar" class="btn btn-primario">Salvar</button>
+                    <button type="button" id="btn-cancelar" class="btn btn-secundario" hidden>Cancelar</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Pessoas cadastradas</h2>
+            <div class="tabela-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>CPF</th>
+                            <th>Nome</th>
+                            <th>Data de nascimento</th>
+                            <th>Idade</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-pessoas"></tbody>
+                </table>
+            </div>
+            <p id="vazio" class="vazio" hidden>Nenhuma pessoa cadastrada.</p>
+        </section>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

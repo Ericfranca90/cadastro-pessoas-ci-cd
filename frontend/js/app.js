@@ -15,6 +15,18 @@ function mostrarMensagem(texto, tipo = "") {
     mensagem.className = tipo ? `mensagem ${tipo}` : "mensagem";
 }
 
+function limparMensagem() {
+    mostrarMensagem("");
+}
+
+function lerFormulario() {
+    return {
+        cpf: obterElemento("cpf").value.replace(/\D/g, ""),
+        nome: obterElemento("nome").value.trim(),
+        dataNascimento: obterElemento("dataNascimento").value,
+    };
+}
+
 function criarCelula(texto) {
     const celula = document.createElement("td");
     celula.textContent = texto;
@@ -68,7 +80,7 @@ function entrarModoEdicao(pessoa) {
     obterElemento("dataNascimento").value = pessoa.dataNascimento;
     obterElemento("titulo-form").textContent = "Editar pessoa";
     obterElemento("btn-cancelar").hidden = false;
-    mostrarMensagem("");
+    limparMensagem();
 }
 
 function sairDoModoEdicao() {
@@ -79,13 +91,21 @@ function sairDoModoEdicao() {
     obterElemento("btn-cancelar").hidden = true;
 }
 
+async function salvarPessoa(pessoa) {
+    if (cpfEmEdicao) {
+        await api.atualizarPessoa(cpfEmEdicao, {
+            nome: pessoa.nome,
+            dataNascimento: pessoa.dataNascimento,
+        });
+        return "Pessoa atualizada com sucesso.";
+    }
+    await api.cadastrarPessoa(pessoa);
+    return "Pessoa cadastrada com sucesso.";
+}
+
 async function tratarEnvio(evento) {
     evento.preventDefault();
-    const pessoa = {
-        cpf: obterElemento("cpf").value.replace(/\D/g, ""),
-        nome: obterElemento("nome").value.trim(),
-        dataNascimento: obterElemento("dataNascimento").value,
-    };
+    const pessoa = lerFormulario();
 
     const erroValidacao = utils.validarPessoa(pessoa);
     if (erroValidacao) {
@@ -94,17 +114,9 @@ async function tratarEnvio(evento) {
     }
 
     try {
-        if (cpfEmEdicao) {
-            await api.atualizarPessoa(cpfEmEdicao, {
-                nome: pessoa.nome,
-                dataNascimento: pessoa.dataNascimento,
-            });
-            mostrarMensagem("Pessoa atualizada com sucesso.", "sucesso");
-        } else {
-            await api.cadastrarPessoa(pessoa);
-            mostrarMensagem("Pessoa cadastrada com sucesso.", "sucesso");
-        }
+        const sucesso = await salvarPessoa(pessoa);
         sairDoModoEdicao();
+        mostrarMensagem(sucesso, "sucesso");
         await carregarPessoas();
     } catch (erro) {
         mostrarMensagem(erro.message, "erro");
@@ -132,7 +144,7 @@ function iniciar() {
     obterElemento("form-pessoa").addEventListener("submit", tratarEnvio);
     obterElemento("btn-cancelar").addEventListener("click", () => {
         sairDoModoEdicao();
-        mostrarMensagem("");
+        limparMensagem();
     });
 
     return carregarPessoas();

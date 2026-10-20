@@ -12,8 +12,12 @@ Use nomes numerados e descritivos, começando por:
 - `06-jest-sem-testes.png`
 - `07-branch-e-commit-etapa-2.png`
 - `08-pull-request-etapa-2.png`
+- `09-pull-request-frontend-heloisa.png`
 
 As imagens 01 a 03 registram a Etapa 1. As imagens 04 a 08 registram a
 configuração das ferramentas na Etapa 2.
+
+A imagem 09 registra os commits da Heloisa no pull request do frontend.
+O commit de finalização feito pelo Eric precisa de uma captura complementar.
 
 Novos nomes serão indicados nos próximos pontos de captura.

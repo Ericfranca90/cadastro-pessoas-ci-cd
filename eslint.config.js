@@ -40,8 +40,25 @@ module.exports = [
     files: ['frontend/**/*.js'],
     languageOptions: {
       ecmaVersion: 'latest',
-      sourceType: 'module',
-      globals: globals.browser,
+      sourceType: 'script',
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
+  },
+  {
+    files: [
+      'frontend/**/*.test.js',
+      'frontend/**/*.spec.js',
+      'frontend/**/__tests__/**/*.js',
+    ],
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+        ...globals.jest,
+      },
     },
   },
 ];

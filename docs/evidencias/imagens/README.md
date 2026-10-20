@@ -37,5 +37,22 @@ relatório acumulado; não foram copiadas para a branch do backend.
 - `25-pull-request-calculo-idade.png`: PR #5 aberto contra `configurar-ferramentas`.
 
 A verificação geral de formatação continua pendente nesta cópia local; a imagem
-23 não a apresenta como aprovada. Novos nomes serão indicados nos próximos pontos
-de captura.
+23 não a apresenta como aprovada.
+
+## Etapa 5 - segundo ciclo TDD do backend
+
+- `26-testes-validar-pessoa.png`: sete testes escritos com referência fixa antes da implementação.
+- `27-modulo-minimo-validar-pessoa.png`: função retornando `undefined`, ainda sem validações.
+- `28-red-validar-pessoa-parte1.png` a `28-red-validar-pessoa-parte4.png`: falhas reais dos sete testes no RED.
+- `29-testes-idade-passando.png`: os três testes anteriores continuaram passando.
+- `30-green-validar-pessoa-codigo.png` e `31-green-validar-pessoa-testes.png`: validações implementadas e dez testes passando.
+- `32-refactor-validar-pessoa-codigo.png` e `33-refactor-validar-pessoa-testes.png`: conferência de data extraída e resultados preservados.
+- `34-verificacoes-validacoes.png`: dez testes, ESLint e Prettier dos arquivos deste ciclo.
+- `35-branch-commit-validacoes.png`: branch e commit do código e dos testes.
+- `36-pr-validacoes-aberto.png`: PR #6 aberto contra `backend-calculo-idade`, dependente do PR #5.
+- `37-comparacao-pr-validacoes.png`: comparação com somente o módulo de validação e seus testes.
+
+Este ciclo testa sete cenários de entrada, não todas as entradas possíveis. CPF
+duplicado, CRUD e integração completa ainda não foram verificados. O contrato
+da API permanece uma proposta, e a verificação geral de formatação continua
+pendente.

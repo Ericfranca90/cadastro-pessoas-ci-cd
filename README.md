@@ -24,7 +24,7 @@ Trabalho acadêmico da disciplina de Integração e Entrega Contínua. O objetiv
 
 ## Escolhas técnicas
 
-As escolhas abaixo foram feitas pela dupla e não foram determinadas pelo professor:
+As escolhas abaixo são opções de organização do projeto, não exigências determinadas pelo professor:
 
 - JavaScript com Node.js e Express no backend.
 - Arquivo JSON para armazenamento local dos cadastros, sem banco de dados.
@@ -50,18 +50,18 @@ Esta organização é uma decisão da dupla, não uma exigência expressa do pro
 
 1. Preparação do ambiente e do repositório — concluída.
 2. Configuração das ferramentas de análise, formatação e testes — concluída na branch `configurar-ferramentas`, aguardando revisão.
-3. Definição e documentação do contrato da API — não iniciada.
-4. Desenvolvimento do backend com TDD — não iniciado.
-5. Armazenamento dos cadastros em arquivo JSON — não iniciado.
-6. Testes de integração — não iniciados.
+3. Definição e documentação do contrato da API — proposta no PR #4, ainda sem confirmação da dupla.
+4. Desenvolvimento do backend com TDD — em andamento nesta branch, aguardando revisão.
+5. Armazenamento dos cadastros em arquivo JSON — implementado nesta branch, aguardando revisão.
+6. Testes de integração — implementados para a API nesta branch, aguardando revisão.
 7. Integração com o frontend — não iniciada.
 8. Criação e verificação da imagem Docker — não iniciada.
 9. Configuração e verificação do workflow no GitHub Actions — não iniciada.
-10. Revisão da entrega e montagem do PDF — não iniciada.
+10. Revisão da entrega e montagem do PDF — relatório acumulado em andamento.
 
 ## Situação atual
 
-A estrutura inicial foi publicada no GitHub. Jest, ESLint e Prettier foram configurados na branch `configurar-ferramentas`. Ainda não há funcionalidades nem testes do CRUD; eles começarão com TDD nas próximas etapas. O pipeline e a imagem Docker também não foram iniciados.
+A estrutura inicial foi publicada no GitHub. Jest, ESLint e Prettier estão na branch `configurar-ferramentas`. O frontend e a proposta de contrato estão em PRs separados. O backend com CRUD, armazenamento JSON e testes foi desenvolvido com TDD nesta branch e ainda depende de revisão. A integração com o frontend, o pipeline e a imagem Docker não foram iniciados.
 
 ## Confirmações do professor
 

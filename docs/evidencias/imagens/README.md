@@ -75,3 +75,22 @@ permanece uma proposta técnica.
 A captura `48b` mostra o comando correto e foi a escolhida para o relatório.
 A verificação geral de formatação continua pendente; a verificação dos arquivos
 deste bloco passou.
+
+## Etapa 7 - integração frontend/backend
+
+- `51-branches-integracao.png`: referências conferidas antes da integração.
+- `52-red-integracao-teste.png`: teste escrito antes de servir a interface.
+- `53-red-integracao-404-parte1.png` e `53-red-integracao-404-parte2.png`: duas falhas esperadas por HTTP 404; a API continuou passando.
+- `54-green-integracao-codigo.png` e `55-green-integracao-testes.png`: Express servindo o frontend e os três testes novos aprovados.
+- `56-integracao-lista-vazia.png` a `61-integracao-exclusao.png`: fluxo real no navegador com JSON de teste isolado - lista vazia, cadastro, CPF duplicado, edição, persistência e exclusão.
+- `62-testes-integracao.png`: 46 testes do backend e 24 do frontend aprovados.
+- `63-qualidade-integracao.png`: ESLint e Prettier dos arquivos deste ciclo aprovados.
+- `64-commit-integracao.png`: branch e commit que uniu backend e frontend.
+- `65-pr-integracao.png`: PR #8 aberto, com base em `backend-crud-api`.
+- `66-autoria-integracao.png`: commits da Heloisa e de Eric preservados no histórico.
+
+O relatório acumulado está em `output/pdf/relatorio-evidencias-etapas-1-a-7-integracao.pdf`.
+Ele reúne as evidências anteriores do backend, o relatório do frontend e esta
+etapa de integração. A formatação geral do projeto ainda está pendente; não foi
+apresentada como aprovada. Os prints antigos `48-branch-commit-backend-parte1.png`
+e `48-branch-commit-backend-parte2.png` não integram o relatório.

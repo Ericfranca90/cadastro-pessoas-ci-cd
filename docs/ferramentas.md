@@ -46,3 +46,7 @@ O Jest procura futuros arquivos `*.test.js` e `*.spec.js` dentro de `backend`. C
 - `npm test`: retornou código 1 com a mensagem `No tests found`, pois ainda não existem testes. A opção `--passWithNoTests` não foi utilizada.
 
 O relatório completo do `npm audit` indicou 19 ocorrências moderadas na árvore das dependências de desenvolvimento do Jest. A verificação `npm audit --omit=dev` não encontrou vulnerabilidades em dependências de produção. Nenhuma correção automática foi aplicada porque o projeto ainda não possui dependências de produção e a solução sugerida pelo npm alteraria a versão principal do Jest.
+
+## Política de finais de linha
+
+O arquivo `.gitattributes` define LF para arquivos de texto do projeto, em acordo com `endOfLine: "lf"` do Prettier. Imagens e PDFs são tratados como binários, sem conversão de finais de linha. Essa regra pertence ao repositório e não exige alterar a configuração global do Git de cada participante.

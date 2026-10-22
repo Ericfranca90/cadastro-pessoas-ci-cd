@@ -94,3 +94,25 @@ Ele reúne as evidências anteriores do backend, o relatório do frontend e esta
 etapa de integração. A formatação geral do projeto ainda está pendente; não foi
 apresentada como aprovada. Os prints antigos `48-branch-commit-backend-parte1.png`
 e `48-branch-commit-backend-parte2.png` não integram o relatório.
+
+## Etapa 8 - padronização da formatação e dos finais de linha
+
+- `67-diagnostico-formatacao.png`: checagem geral antes da manutenção, com 15 arquivos apontados.
+- `67b-diagnostico-finais-linha.png`: origem de `core.autocrlf`, exemplos LF/CRLF e oito avisos que persistiram ao permitir CRLF apenas no diagnóstico.
+- `68-formatacao-geral-passando.png`: checagem geral do Prettier aprovada após a padronização.
+- `69-eslint-e-testes-backend.png`: ESLint aprovado e 46 testes do backend passando.
+- `70-testes-frontend.png`: 24 testes do frontend passando.
+- `71b-politica-finais-de-linha.png`: política de LF e arquivos de texto conferidos no Git.
+- `72-branch-commit-formatacao.png`: branch, commit e resumo das alterações desta manutenção.
+- `73-pr-formatacao-aberto.png`: PR #9 aberto contra `integrar-frontend-backend`, dependente do PR #8.
+
+Dos 15 avisos iniciais, sete eram apenas diferenças de LF/CRLF e oito também
+envolviam formatação. A política versionada usa LF para texto e trata imagens e
+PDFs como binários. A checagem geral passou também em um checkout isolado do
+commit, após `npm ci` pelo lockfile. Não houve alteração funcional nem merge de PRs.
+
+O relatório acumulado desta etapa está em
+`output/pdf/relatorio-evidencias-etapas-1-a-8-formatacao.pdf`. Ele preserva as 91
+páginas anteriores. As capturas antigas `48-branch-commit-backend-parte1.png`,
+`48-branch-commit-backend-parte2.png` e `71-politica-finais-de-linha.png` não
+integram este relatório; as versões escolhidas são `48b` e `71b`.

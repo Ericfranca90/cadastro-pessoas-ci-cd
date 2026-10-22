@@ -49,11 +49,11 @@ Esta organização é uma decisão da dupla, não uma exigência expressa do pro
 ## Etapas previstas
 
 1. Preparação do ambiente e do repositório — concluída.
-2. Configuração das ferramentas de análise, formatação e testes — concluída na branch `configurar-ferramentas`, aguardando revisão.
-3. Definição e documentação do contrato da API — proposta no PR #4, ainda sem confirmação da dupla.
-4. Desenvolvimento do backend com TDD — em andamento nesta branch, aguardando revisão.
-5. Armazenamento dos cadastros em arquivo JSON — implementado nesta branch, aguardando revisão.
-6. Testes de integração — implementados para a API nesta branch, aguardando revisão.
+2. Configuração das ferramentas de análise, formatação e testes — publicada no PR #1.
+3. Definição e documentação do contrato da API — proposta técnica no PR #4, usada como referência e ajustável na integração.
+4. Desenvolvimento do backend com TDD — publicado no PR #7.
+5. Armazenamento dos cadastros em arquivo JSON — publicado no PR #7.
+6. Testes de integração da API — publicados no PR #7.
 7. Integração com o frontend — não iniciada.
 8. Criação e verificação da imagem Docker — não iniciada.
 9. Configuração e verificação do workflow no GitHub Actions — não iniciada.
@@ -61,7 +61,7 @@ Esta organização é uma decisão da dupla, não uma exigência expressa do pro
 
 ## Situação atual
 
-A estrutura inicial foi publicada no GitHub. Jest, ESLint e Prettier estão na branch `configurar-ferramentas`. O frontend e a proposta de contrato estão em PRs separados. O backend com CRUD, armazenamento JSON e testes foi desenvolvido com TDD nesta branch e ainda depende de revisão. A integração com o frontend, o pipeline e a imagem Docker não foram iniciados.
+A estrutura inicial foi publicada no GitHub. Jest, ESLint e Prettier estão na branch `configurar-ferramentas`. O frontend já foi desenvolvido; a proposta de contrato está em um PR separado. O backend com CRUD, armazenamento JSON e testes foi desenvolvido com TDD e publicado no PR #7. A integração com o frontend, o pipeline e a imagem Docker são as próximas etapas conduzidas por Eric.
 
 ## Confirmações do professor
 

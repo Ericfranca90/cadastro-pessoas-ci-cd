@@ -1,6 +1,6 @@
 # Backend do cadastro de pessoas
 
-API em JavaScript com Express e armazenamento em arquivo JSON local. O contrato documentado no PR #4 continua sendo uma proposta de referência, ainda não confirmada pela dupla.
+API em JavaScript com Express e armazenamento em arquivo JSON local. A proposta técnica documentada no PR #4 foi usada como referência e pode ser ajustada por Eric durante a integração.
 
 ## Executar
 
@@ -41,4 +41,4 @@ npm test -- --runInBand
 npm run lint
 ```
 
-Os testes HTTP usam arquivos temporários separados dos dados locais. A interface do colega ainda não foi integrada à API nesta branch. Docker e GitHub Actions serão tratados em etapas posteriores.
+Os testes HTTP usam arquivos temporários separados dos dados locais. O frontend já foi desenvolvido; integrá-lo à API é a próxima etapa de Eric. Docker e GitHub Actions serão tratados em etapas posteriores.

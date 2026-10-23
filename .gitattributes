@@ -1,0 +1,7 @@
+* text=auto eol=lf
+
+# Evidências binárias não devem passar por conversão de finais de linha.
+*.png binary -eol
+*.jpg binary -eol
+*.jpeg binary -eol
+*.pdf binary -eol

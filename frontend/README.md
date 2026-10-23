@@ -15,12 +15,12 @@ js/*.test.js      Testes unitários e de integração do frontend (Jest + jsdom)
 
 ## Contrato da API consumido
 
-| Ação | Rota | Corpo |
-| --- | --- | --- |
-| Listar | `GET /pessoas` | - |
-| Cadastrar | `POST /pessoas` | `cpf`, `nome`, `dataNascimento` |
-| Editar | `PUT /pessoas/:cpf` | `nome`, `dataNascimento` |
-| Excluir | `DELETE /pessoas/:cpf` | - |
+| Ação      | Rota                   | Corpo                           |
+| --------- | ---------------------- | ------------------------------- |
+| Listar    | `GET /pessoas`         | -                               |
+| Cadastrar | `POST /pessoas`        | `cpf`, `nome`, `dataNascimento` |
+| Editar    | `PUT /pessoas/:cpf`    | `nome`, `dataNascimento`        |
+| Excluir   | `DELETE /pessoas/:cpf` | -                               |
 
 A data de nascimento usa o formato `AAAA-MM-DD`. A idade é calculada pelo backend e exibida na tabela. Erros da API devem vir no formato `{ "erro": "mensagem" }`.
 

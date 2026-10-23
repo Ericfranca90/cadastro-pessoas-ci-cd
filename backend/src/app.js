@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('node:path');
 const { validarPessoa } = require('./validarPessoa');
 const { lerPessoas, salvarPessoas } = require('./armazenamentoPessoas');
 const { normalizarPessoa, pessoaComIdade } = require('./pessoa');
@@ -74,6 +75,8 @@ function criarApp({ arquivoDados, obterDataReferencia }) {
     salvarPessoas(arquivoDados, pessoas);
     return resposta.status(204).end();
   });
+
+  app.use(express.static(path.join(__dirname, '..', '..', 'frontend')));
 
   app.use((requisicao, resposta) => {
     return resposta.status(404).json({ erro: 'Rota não encontrada.' });

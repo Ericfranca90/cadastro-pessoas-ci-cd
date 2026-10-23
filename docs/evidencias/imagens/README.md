@@ -177,7 +177,9 @@ abertos e às simulações locais, que não devem ser interpretadas como merges 
 - `120-ci-final-main.png`: execução real aprovada do GitHub Actions na `main`.
 
 As duas capturas finais integram o
-[`relatório final`](../../../output/pdf/relatorio-evidencias-final.pdf), que preserva
-as 120 páginas anteriores. As capturas `48-branch-commit-backend-parte1.png`,
-`48-branch-commit-backend-parte2.png` e `71-politica-finais-de-linha.png` permanecem
-fora do relatório e do versionamento; foram usadas as versões `48b` e `71b`.
+[`relatório final`](../../../output/pdf/relatorio-evidencias-final.pdf), com 122
+páginas. A capa foi atualizada para indicar as etapas 1 a 10 e a situação final;
+as páginas 2 a 122 mantêm as evidências e explicações históricas. As capturas
+`48-branch-commit-backend-parte1.png`, `48-branch-commit-backend-parte2.png` e
+`71-politica-finais-de-linha.png` permanecem fora do relatório e do
+versionamento; foram usadas as versões `48b` e `71b`.

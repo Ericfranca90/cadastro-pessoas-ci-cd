@@ -34,7 +34,7 @@ As escolhas abaixo são opções de organização do projeto, não exigências d
 - Docker para gerar a imagem da aplicação.
 - GitHub Actions para executar automaticamente as verificações do projeto.
 
-As ferramentas locais, suas versões e seus comandos estão descritos em [`docs/ferramentas.md`](docs/ferramentas.md). Docker e GitHub Actions serão configurados apenas nas etapas correspondentes. O escopo não inclui login, autenticação nem validação matemática completa dos dígitos do CPF.
+As ferramentas locais, suas versões e seus comandos estão descritos em [`docs/ferramentas.md`](docs/ferramentas.md). O workflow está descrito em [`docs/integracao-continua.md`](docs/integracao-continua.md). A imagem Docker permanece para a etapa correspondente. O escopo não inclui login, autenticação nem validação matemática completa dos dígitos do CPF.
 
 ## Organização do projeto
 
@@ -54,14 +54,14 @@ Esta organização é uma decisão da dupla, não uma exigência expressa do pro
 4. Desenvolvimento do backend com TDD — publicado no PR #7.
 5. Armazenamento dos cadastros em arquivo JSON — publicado no PR #7.
 6. Testes de integração da API — publicados no PR #7.
-7. Integração com o frontend — não iniciada.
+7. Integração com o frontend — publicada no PR #8.
 8. Criação e verificação da imagem Docker — não iniciada.
-9. Configuração e verificação do workflow no GitHub Actions — não iniciada.
+9. Configuração e verificação do workflow no GitHub Actions — publicada no PR #10; execução no PR aprovada, ainda não integrada à `main`.
 10. Revisão da entrega e montagem do PDF — relatório acumulado em andamento.
 
 ## Situação atual
 
-A estrutura inicial foi publicada no GitHub. Jest, ESLint e Prettier estão na branch `configurar-ferramentas`. O frontend já foi desenvolvido; a proposta de contrato está em um PR separado. O backend com CRUD, armazenamento JSON e testes foi desenvolvido com TDD e publicado no PR #7. A integração com o frontend, o pipeline e a imagem Docker são as próximas etapas conduzidas por Eric.
+A estrutura inicial foi publicada no GitHub. Jest, ESLint e Prettier estão na branch `configurar-ferramentas`. O frontend já foi desenvolvido; a proposta de contrato está em um PR separado. O backend com CRUD, armazenamento JSON e testes foi desenvolvido com TDD e publicado no PR #7. A integração com o frontend está no PR #8. A padronização da formatação está no PR #9. O workflow de integração contínua está no PR #10, com verificações aprovadas no pull request; seu funcionamento na `main` dependerá da integração futura. A imagem Docker ainda não foi criada.
 
 ## Confirmações do professor
 

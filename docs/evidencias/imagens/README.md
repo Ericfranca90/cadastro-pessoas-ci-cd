@@ -116,3 +116,26 @@ O relatório acumulado desta etapa está em
 páginas anteriores. As capturas antigas `48-branch-commit-backend-parte1.png`,
 `48-branch-commit-backend-parte2.png` e `71-politica-finais-de-linha.png` não
 integram este relatório; as versões escolhidas são `48b` e `71b`.
+
+## Etapa 9 - integração contínua com GitHub Actions
+
+- `74-ci-gatilhos.png`: início do workflow, com gatilhos, permissão de leitura e job.
+- `75-ci-etapas.png`: instalação e verificações automáticas definidas no workflow.
+- `76-ci-branch-status.png`: branch e arquivo do workflow antes do primeiro commit.
+- `77-ci-pr-verificacoes.png`: PR #10 aberto e check aprovado após o ajuste do lockfile.
+- `78-ci-execucao-aprovada.png`: segunda execução, iniciada pelo PR, concluída com sucesso.
+- `79a-ci-instalacao-e-qualidade.png` e `79b-ci-instalacao-e-qualidade.png`: instalações da raiz e do frontend com `npm ci`.
+- `80-ci-testes-backend.png`: 46 testes do backend aprovados no GitHub.
+- `81-ci-testes-frontend.png`: 24 testes do frontend aprovados no GitHub.
+- `82-ci-commits.png`: commit inicial do workflow e commit que completou o lockfile para Linux.
+- `83-ci-arquivos-alterados.png`: comparação do PR limitada ao workflow e ao lockfile antes do commit documental.
+- `84-ci-formatacao.png`: verificação geral do Prettier aprovada no GitHub.
+- `85-ci-analise-estatica.png`: ESLint aprovado no GitHub.
+
+A primeira execução do PR #10 falhou no `npm ci` da raiz por duas entradas
+indiretas ausentes no lockfile. Após o ajuste, a segunda execução passou em
+todos os passos. O workflow ainda não foi executado na `main`, pois os PRs
+permanecem abertos. O relatório acumulado desta etapa está em
+`output/pdf/relatorio-evidencias-etapas-1-a-9-github-actions.pdf` e preserva as
+100 páginas anteriores. Os três prints antigos excluídos na etapa 8 continuam
+fora do relatório e deste commit.

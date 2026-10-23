@@ -24,7 +24,7 @@ Trabalho acadêmico da disciplina de Integração e Entrega Contínua. O objetiv
 
 ## Escolhas técnicas
 
-As escolhas abaixo foram feitas pela dupla e não foram determinadas pelo professor:
+As escolhas abaixo são opções de organização do projeto, não exigências determinadas pelo professor:
 
 - JavaScript com Node.js e Express no backend.
 - Arquivo JSON para armazenamento local dos cadastros, sem banco de dados.
@@ -49,19 +49,19 @@ Esta organização é uma decisão da dupla, não uma exigência expressa do pro
 ## Etapas previstas
 
 1. Preparação do ambiente e do repositório — concluída.
-2. Configuração das ferramentas de análise, formatação e testes — concluída na branch `configurar-ferramentas`, aguardando revisão.
-3. Definição e documentação do contrato da API — não iniciada.
-4. Desenvolvimento do backend com TDD — não iniciado.
-5. Armazenamento dos cadastros em arquivo JSON — não iniciado.
-6. Testes de integração — não iniciados.
+2. Configuração das ferramentas de análise, formatação e testes — publicada no PR #1.
+3. Definição e documentação do contrato da API — proposta técnica no PR #4, usada como referência e ajustável na integração.
+4. Desenvolvimento do backend com TDD — publicado no PR #7.
+5. Armazenamento dos cadastros em arquivo JSON — publicado no PR #7.
+6. Testes de integração da API — publicados no PR #7.
 7. Integração com o frontend — não iniciada.
 8. Criação e verificação da imagem Docker — não iniciada.
 9. Configuração e verificação do workflow no GitHub Actions — não iniciada.
-10. Revisão da entrega e montagem do PDF — não iniciada.
+10. Revisão da entrega e montagem do PDF — relatório acumulado em andamento.
 
 ## Situação atual
 
-A estrutura inicial foi publicada no GitHub. Jest, ESLint e Prettier foram configurados na branch `configurar-ferramentas`. Ainda não há funcionalidades nem testes do CRUD; eles começarão com TDD nas próximas etapas. O pipeline e a imagem Docker também não foram iniciados.
+A estrutura inicial foi publicada no GitHub. Jest, ESLint e Prettier estão na branch `configurar-ferramentas`. O frontend já foi desenvolvido; a proposta de contrato está em um PR separado. O backend com CRUD, armazenamento JSON e testes foi desenvolvido com TDD e publicado no PR #7. A integração com o frontend, o pipeline e a imagem Docker são as próximas etapas conduzidas por Eric.
 
 ## Confirmações do professor
 

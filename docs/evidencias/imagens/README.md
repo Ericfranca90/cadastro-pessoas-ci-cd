@@ -52,7 +52,26 @@ A verificação geral de formatação continua pendente nesta cópia local; a im
 - `36-pr-validacoes-aberto.png`: PR #6 aberto contra `backend-calculo-idade`, dependente do PR #5.
 - `37-comparacao-pr-validacoes.png`: comparação com somente o módulo de validação e seus testes.
 
-Este ciclo testa sete cenários de entrada, não todas as entradas possíveis. CPF
-duplicado, CRUD e integração completa ainda não foram verificados. O contrato
-da API permanece uma proposta, e a verificação geral de formatação continua
-pendente.
+Ao fim da Etapa 5, esse ciclo testava sete cenários de entrada, não todas as
+entradas possíveis. O CRUD ainda não havia sido verificado. O contrato da API
+permanece uma proposta técnica.
+
+## Etapa 6 - CRUD, API e armazenamento JSON
+
+- `38-red-post-teste.png`: teste de integração escrito antes do cadastro.
+- `39-red-post-falha.png`: POST retornando 404 no RED, quando se esperava 201.
+- `40-testes-anteriores-passando.png`: dez testes anteriores preservados.
+- `41-green-post-cadastro.png`: implementação da rota de cadastro.
+- `42-green-post-json.png`: armazenamento do cadastro em arquivo JSON, sem idade persistida.
+- `43-green-post-testes.png`: primeiro ciclo do POST aprovado com onze testes.
+- `44-testes-completos-backend.png`: 43 testes do backend aprovados.
+- `45-eslint-backend.png`: execução da análise estática sem erros.
+- `46-prettier-backend.png`: formatação dos arquivos deste bloco aprovada.
+- `47-formatacao-geral-pendente.png`: cinco arquivos anteriores ainda apontados pela verificação geral.
+- `48b-branch-commit-backend.png`: branch `backend-crud-api` e commit do código.
+- `49-pr-backend-aberto.png`: PR #7 aberto contra `backend-validacoes`.
+- `50-arquivos-pr-backend.png`: comparação do PR com os 18 arquivos deste bloco.
+
+A captura `48b` mostra o comando correto e foi a escolhida para o relatório.
+A verificação geral de formatação continua pendente; a verificação dos arquivos
+deste bloco passou.

@@ -1,0 +1,51 @@
+name: Verificações do projeto
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  verificar:
+    name: Verificar formatação, análise estática e testes
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Obter o código
+        uses: actions/checkout@v7
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24.x
+          package-manager-cache: false
+
+      - name: Mostrar versões de Node.js e npm
+        run: |
+          node --version
+          npm --version
+
+      - name: Instalar dependências da raiz
+        run: npm ci
+
+      - name: Instalar dependências do frontend
+        working-directory: frontend
+        run: npm ci
+
+      - name: Verificar formatação geral
+        run: npm run format:check
+
+      - name: Executar análise estática
+        run: npm run lint
+
+      - name: Executar testes do backend
+        run: npm test -- --ci --runInBand
+
+      - name: Executar testes do frontend
+        working-directory: frontend
+        run: npm test -- --ci --runInBand

@@ -139,3 +139,28 @@ permanecem abertos. O relatório acumulado desta etapa está em
 `output/pdf/relatorio-evidencias-etapas-1-a-9-github-actions.pdf` e preserva as
 100 páginas anteriores. Os três prints antigos excluídos na etapa 8 continuam
 fora do relatório e deste commit.
+
+## Etapa 10 - imagem Docker
+
+- `86-dockerfile.png` e `87-dockerignore.png`: arquivos de empacotamento antes do build.
+- `88-docker-disponibilidade.png`: cliente e serviço Docker com contêineres Linux disponíveis.
+- `89-docker-build-imagem.png`: construção concluída, identificação e tamanho da imagem local.
+- `90-docker-container-volume.png`: primeiro contêiner, porta local e volume nomeado.
+- `91-docker-tela-inicial.png`: interface aberta com a lista vazia.
+- `92-docker-cadastro-idade.png`: cadastro fictício e idade calculada.
+- `93-docker-edicao.png`: nome e nascimento editados, com CPF preservado.
+- `94-docker-container-recriado.png` e `95-docker-persistencia.png`: segundo contêiner e cadastro preservado no mesmo volume.
+- `96-docker-exclusao.png`: pedido de confirmação, ainda antes da exclusão.
+- `97-docker-exclusao-apos-atualizar.png`: lista vazia após confirmar e atualizar.
+- `98-docker-console.png`: console do navegador sem erros visíveis após os fluxos.
+- `99-docker-branch-commit.png`: branch e commit do código Docker.
+- `100-docker-pr-aberto.png`: PR #11 aberto contra `configurar-github-actions`.
+- `101-docker-ci-aprovada.png`: verificação remota do PR #11 aprovada.
+- `102-docker-arquivos-alterados.png`: quatro arquivos no PR antes do commit documental.
+
+O relatório acumulado está em
+`output/pdf/relatorio-evidencias-etapas-1-a-10-docker.pdf`, com 120 páginas. As
+109 páginas anteriores foram preservadas; a captura 96 não é apresentada como
+prova da exclusão concluída. A imagem não foi publicada em registro e nenhum PR
+foi mesclado. Os três prints antigos excluídos na etapa 8 permanecem fora deste
+relatório e deste commit.

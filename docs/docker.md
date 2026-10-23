@@ -66,3 +66,7 @@ mostraram erros durante essa validação.
 
 Esses resultados são locais. A imagem não foi publicada em registro, e os
 comandos acima não removem o volume nem outros recursos do Docker.
+
+## Conferência após a integração
+
+No commit funcional [`fbb98de` da `main`](https://github.com/Ericfranca90/cadastro-pessoas-ci-cd/commit/fbb98de8946db80b238f8351bdd2b49569dbe899), a imagem foi construída novamente com a etiqueta local `cadastro-pessoas-ci-cd:main-fbb98de`. Um contêiner de teste separado respondeu pela interface e pela API: cadastro, edição, persistência após reinício e exclusão. O arquivo JSON no volume não armazenou a idade. Essa conferência não publicou a imagem em um registro nem alterou os recursos da validação anterior.

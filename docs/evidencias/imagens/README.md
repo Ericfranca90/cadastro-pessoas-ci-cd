@@ -21,9 +21,9 @@ configuração das ferramentas na Etapa 2.
 A imagem 09 registra os commits da Heloisa no pull request do frontend.
 A imagem 10 mostra os commits dela preservados e o commit de finalização do Eric.
 
-As imagens 11 a 15 documentam a proposta de contrato da API na branch
-`definir-contrato-api`. Elas permanecem nessa branch e foram preservadas no
-relatório acumulado; não foram copiadas para a branch do backend.
+As imagens 11 a 15 documentam a proposta de contrato da API, originalmente na
+branch `definir-contrato-api`. Foram preservadas no relatório acumulado e,
+naquela etapa, não foram copiadas para a branch do backend.
 
 ## Etapa 4 - primeiro ciclo TDD do backend
 
@@ -134,8 +134,8 @@ integram este relatório; as versões escolhidas são `48b` e `71b`.
 
 A primeira execução do PR #10 falhou no `npm ci` da raiz por duas entradas
 indiretas ausentes no lockfile. Após o ajuste, a segunda execução passou em
-todos os passos. O workflow ainda não foi executado na `main`, pois os PRs
-permanecem abertos. O relatório acumulado desta etapa está em
+todos os passos. Naquele momento, o workflow ainda não havia sido executado na
+`main`, pois os PRs permaneciam abertos. O relatório acumulado desta etapa está em
 `output/pdf/relatorio-evidencias-etapas-1-a-9-github-actions.pdf` e preserva as
 100 páginas anteriores. Os três prints antigos excluídos na etapa 8 continuam
 fora do relatório e deste commit.
@@ -161,6 +161,23 @@ fora do relatório e deste commit.
 O relatório acumulado está em
 `output/pdf/relatorio-evidencias-etapas-1-a-10-docker.pdf`, com 120 páginas. As
 109 páginas anteriores foram preservadas; a captura 96 não é apresentada como
-prova da exclusão concluída. A imagem não foi publicada em registro e nenhum PR
-foi mesclado. Os três prints antigos excluídos na etapa 8 permanecem fora deste
-relatório e deste commit.
+prova da exclusão concluída. A imagem não foi publicada em registro e, naquela
+etapa, nenhum PR havia sido mesclado. Os três prints antigos excluídos na etapa 8
+permanecem fora deste relatório e deste commit.
+
+## Fechamento da entrega
+
+Os PRs planejados foram mesclados posteriormente, preservando os commits da
+Heloisa. A [execução final da CI na `main`](https://github.com/Ericfranca90/cadastro-pessoas-ci-cd/actions/runs/39942796274)
+passou no commit funcional `fbb98de`. A imagem Docker desse commit também foi
+conferida localmente. Esses fatos são posteriores às capturas históricas de PRs
+abertos e às simulações locais, que não devem ser interpretadas como merges reais.
+
+- `119-prs-integrados-main.png`: visão dos PRs mesclados no GitHub.
+- `120-ci-final-main.png`: execução real aprovada do GitHub Actions na `main`.
+
+As duas capturas finais integram o
+[`relatório final`](../../../output/pdf/relatorio-evidencias-final.pdf), que preserva
+as 120 páginas anteriores. As capturas `48-branch-commit-backend-parte1.png`,
+`48-branch-commit-backend-parte2.png` e `71-politica-finais-de-linha.png` permanecem
+fora do relatório e do versionamento; foram usadas as versões `48b` e `71b`.

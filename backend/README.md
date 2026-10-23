@@ -41,4 +41,4 @@ npm test -- --runInBand
 npm run lint
 ```
 
-Os testes HTTP usam arquivos temporários separados dos dados locais. O frontend já foi desenvolvido; integrá-lo à API é a próxima etapa de Eric. Docker e GitHub Actions serão tratados em etapas posteriores.
+Os testes HTTP usam arquivos temporários separados dos dados locais. O frontend está integrado e é servido pelo mesmo servidor em `http://localhost:3000`. A imagem Docker e o workflow do GitHub Actions também foram integrados; consulte o README principal para as verificações finais.
